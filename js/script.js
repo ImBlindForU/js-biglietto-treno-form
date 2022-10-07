@@ -34,9 +34,17 @@ userButtoninput.addEventListener('click', function(){
     console.log(userEtainput);
 
     // calcolo i primi valore senza sconto
-    const basePrice = userKm * kmPrice
-    console.log(basePrice,typeof basePrice)
+    const price = userKm * kmPrice
+    console.log(price,typeof price)
 
+
+    if (userEtainput < 18){
+        finalPrice = price * 0.8
+    } else if (userEtainput => 65 ){
+        finalPrice = price * 06
+    } else{
+        finalPrice = price
+    }
 })
 
 
