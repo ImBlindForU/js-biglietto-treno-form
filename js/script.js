@@ -39,12 +39,17 @@ userButtoninput.addEventListener('click', function(){
 
 
     if (userEtainput < 18){
-        finalPrice = price * 0.8
+        price = price * 0.8
     } else if (userEtainput => 65 ){
-        finalPrice = price * 06
+        price = price * 06
     } else{
-        finalPrice = price
+        price = price
     }
+    console.log(price)
+    
+
+    
 })
 
-
+document.getElementById("result").innerHTML = 
+    `<h1>Questo e il prezzo ${price}`
