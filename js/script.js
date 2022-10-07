@@ -27,10 +27,16 @@ const userButtoninput = document.getElementById("btn");
 userButtoninput.addEventListener('click', function(){
     // prendo i valori dell risposte km e eta 
 
-
     const userKminput = userKminput.value;
     console.log(userKminput);
 
     const userEtainput = userEtainput.value;
     console.log(userEtainput);
+
+    // calcolo i primi valore senza sconto
+    
+    const basePrice = kmPrice * userKminput
+    console.log(basePrice)
+
+
 })
