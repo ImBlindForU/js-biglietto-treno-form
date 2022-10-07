@@ -48,9 +48,6 @@ userButtoninput.addEventListener('click', function(){
     console.log(price)
     
     document.getElementById("result").innerHTML = 
-    `<h1>Questo e il prezzo ${price}</h1>`
-
-
-    
+    `Questo e il prezzo: ${price}`
 })
 
